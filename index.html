@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form id="calculator">
+        <div id="display" name="display">
+            <div id="result__div">
+                <input type="text" name="display__result" id="result">
+            </div>
+            <div id="input__div">
+                <input type="text" name="display__input" id="input">
+            </div>
+        </div>
+        <hr>
+        <div id="keys">
+            <input type="button" name="add" value="+" class="ops" onClick="inputNum(add.value)">
+            <input type="button" name="sub" value="-" class="ops" onClick="inputNum(sub.value)">
+            <input type="button" name="mult" value="*" class="ops" onClick="inputNum(mult.value)">
+            <input type="button" name="divid" value="/" class="ops" onClick="inputNum(divid.value)">
+
+            <input type="button" name="n7" value="7" class="number" onClick="inputNum(n7.value)">
+            <input type="button" name="n8" value="8" class="number" onClick="inputNum(n8.value)">
+            <input type="button" name="n9" value="9" class="number" onClick="inputNum(n9.value)">
+            <input type="button" name="cl" value="c" class="ops" onClick="deleteNum()">
+
+            <input type="button" name="n4" value="4" class="number" onClick="inputNum(n4.value)">
+            <input type="button" name="n5" value="5" class="number" onClick="inputNum(n5.value)">
+            <input type="button" name="n6" value="6" class="number" onClick="inputNum(n6.value)">
+            <input type="button" name="clal" value="ac" class="ops" onClick="deleteAll()">
+
+            <input type="button" name="n1" value="1" class="number" onClick="inputNum(n1.value)">
+            <input type="button" name="n2" value="2" class="number" onClick="inputNum(n2.value)">
+            <input type="button" name="n3" value="3" class="number" onClick="inputNum(n3.value)">
+            <input type="button" name="equal" value="=" class="ops ops--enter" onClick="computeNum()">
+
+            <input type="button" name="n0" value="0" class="number number--zero" onClick="inputNum(n0.value)">
+            <input type="button" name="nd" value="." class="number" onClick="inputNum(nd.value)">
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
