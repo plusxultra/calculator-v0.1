@@ -2,7 +2,7 @@ var result = document.querySelector("#result");
 var input = document.querySelector("#input");
 
 function inputNum(n){
-    input.value = input.value + n;
+        input.value = input.value + n;
 }
 
 function deleteNum(){
